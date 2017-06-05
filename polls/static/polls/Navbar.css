@@ -1,0 +1,30 @@
+
+.mynavbar  {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding: 5px 0px;
+}
+
+.redtime {
+    margin-right: 10px;
+    color: red;
+}
+
+
+.navbardetail {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navigate {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-title {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 23px;
+}

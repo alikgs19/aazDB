@@ -1,0 +1,102 @@
+<div class="container-center">
+
+   <div class="button" ng-click="goBack()">بازگشت</div>
+
+
+   <div class="club-container">
+      <div class="flexrow">
+         <div class="grey-box left-margin">
+            <div class="flexrow">
+
+               <div class="lable">
+                  اسم
+               </div>
+
+               <div> {$ clubInfo.name $}</div>
+            </div>
+            <div class="flexrow">
+
+               <div class="lable">
+                  بودجه
+               </div>
+
+               <div> {$ clubInfo.budget $} </div>
+            </div>
+
+         </div>
+         <div class="grey-box">
+            <div class="flexrow">
+
+               <div class="lable">
+                  نام استادیوم
+               </div>
+
+               <div> {$ stadiumInfo.name $}</div>
+            </div>
+            <div class="flexrow">
+
+               <div class="lable">
+ظرفیت
+               </div>
+
+               <div> {$ stadiumInfo.capacity $}</div>
+            </div>
+            <div class="flexrow">
+
+               <div class="lable">
+                  قیمت استادیوم
+               </div>
+
+               <div> {$ stadiumInfo.price $}</div>
+            </div>
+            <div class="flexrow">
+
+               <div class="lable">
+                  وضعیت چمن
+               </div>
+
+               <div> {$ stadiumInfo.feild $}</div>
+            </div>
+            <div class="flexrow">
+
+               <div class="lable">
+                  وضعیت دستشویی
+               </div>
+
+               <div> {$ stadiumInfo.wc $}</div>
+            </div>
+
+         </div>
+      </div>
+
+
+      <div class="grey-box">
+         <table class="table">
+            <thead>
+            <tr>
+               <th>شماره</th>
+               <th>میزبان</th>
+               <th>مهمان</th>
+               <th>زمان بازی</th>
+               <th>نتیجه</th>
+            </tr>
+            </thead>
+            <tbody ng-repeat="match in clubMatchs">
+            <tr>
+               <td> {$ match.key $}</td>
+               <td> {$ match.host $}</td>
+               <td> {$ match.guest $}</td>
+               <td> {$ match.time $}</td>
+               <td> {$ match.score $}</td>
+               <td> {$ match.league $}</td>
+            </tr>
+            </tbody>
+         </table>
+
+      </div>
+   </div>
+   <div class="stadium-container">
+
+   </div>
+
+</div>

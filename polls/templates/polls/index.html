@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en-US" ng-app="footsi" ng-controller="clubListController">
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/club.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/clubinfo.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/general.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/matchHandle.css' %}" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css' %}">
+    <title>فوتسی</title>
+
+
+</head>
+
+
+<body>
+
+<ng-view>
+
+</ng-view>
+
+
+<script type="text/javascript" src="{% static 'polls/angular/angular.min.js'%}"></script>
+<script type="text/javascript" src="{% static 'polls/angular/angular-route.js'%}"></script>
+<script type="text/javascript" src="{% static 'polls/Main.js'%}"></script>
+<script type="text/javascript" src="{% static 'polls/clubInfoController.js'%}"></script>
+<script type="text/javascript" src="{% static 'polls/matchController.js'%}"></script>
+
+
+</body>
+</html>

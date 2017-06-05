@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="Homestyle.css">
+    <link rel="stylesheet" type="text/css" href="General.css">
+    <link rel="stylesheet" type="text/css" href="Navbar.css">
+    <link rel="stylesheet" type="text/css" href="Header.css">
+    <link rel="stylesheet" type="text/css" href="Breadcrumb.css">
+    <link rel="stylesheet" type="text/css" href="Billtable.css">
+    <link rel="stylesheet" type="text/css" href="Input.css">
+    <link rel="stylesheet" type="text/css" href="Buttons.css">
+    <link rel="stylesheet" type="text/css" href="Footer.css">
+    <link rel="stylesheet" type="text/css" href="Selectbox.css">
+    <link rel="stylesheet" type="text/css" href="Slideshow.css">
+    <link rel="stylesheet" type="text/css" href="Dropdown.css">
+
+
+    <link rel="icon" type="image/gif" href="assets/LogoBlack.png"/>
+    <title>اکبر تیکت</title>
+
+
+</head>
+
+<script src="jquery/jquerylib.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".option").click(function () {
+            $(this).siblings("input").val($(this).text());
+            $(this).parent().siblings("p").html($(this).text());
+        });
+    });
+</script>
+
+
+<body>
+
+<header class="pinkheader">
+    <div class="pinkheadercontainer flexrowcontainer">
+        <div class="logo headeritem flexrowcontainer">
+            <img src="assets/LogoWhite.png" alt="logo image" class="logoimage">
+            <p>اکبر تیکت</p>
+
+        </div>
+
+        <div class="mydropdown profile headeritem flexrowcontainer primarycolor">
+
+            <i class="fa fa-user fa-lg icon" aria-hidden="true"></i>
+            <p class="profilename">علی کریمی</p>
+            <div class="dropdown-content">
+                <a>بلیت‌های من</a>
+                <a>خروج</a>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</header>
+
+
+<div class="fixedfooter">
+    <div class="footercontent">علی کریمی صادق جزایری | دانشکده‌ی فنی دانشگاه تهران ، بهار ۱۳۹۶</div>
+</div>
+</body>
+</html>

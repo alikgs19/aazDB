@@ -1,0 +1,31 @@
+
+<header class="header ng-class:{ 'pinkheader' : homeState };">
+    <div class="headercontainer flexrowcontainer ng-class:{ 'pinkheadercontainer' : homeState };">
+        <div ng-click="goHome()" class="logo headeritem flexrowcontainer">
+            <img src="assets/{{ homeState ? 'LogoWhite.png' : 'LogoBlack.png'}}" alt="logo image" class="logoimage">
+
+            <p>اکبر تیکت</p>
+
+        </div>
+
+        <div class="mydropdown profile headeritem flexrowcontainer ">
+
+            <i class="fa fa-user fa-lg icon" aria-hidden="true"></i>
+            <p class="profilename">{{ user.name }}</p>
+            <div ng-show="user.loginState">
+                <div class="dropdown-content">
+                    <a ng-click="signOut()">خروج</a>
+                </div>
+            </div>
+            <div ng-show="!user.loginState">
+                <div class="dropdown-content">
+                    <a ng-click="loginForm()">ورود به سیستم</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</header>

@@ -1,0 +1,26 @@
+.team {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.team:hover {
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+.not-active {
+
+    background-color: #adbbc4 !important;
+}
+
+.not-active:hover {
+    background-color: #adbbc4 !important;
+    cursor: auto;
+}
+div.selected-team {
+    color: white;
+    background-color: grey !important;
+}

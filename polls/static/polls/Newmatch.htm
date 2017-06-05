@@ -1,0 +1,27 @@
+<div class="container-center">
+    <div class="button" ng-click="goBack()"> بازگشت </div>
+    <div class="button" ng-click="playMatch()" ng-class="{ 'not-active' : !activePlayButton }">انجام بازی </div>
+    <div class="grey-box flexcolumnright">
+        <div>
+            تیم میزبان
+        </div>
+        <div class="flexrow">
+            <div ng-repeat="team in hostTeams" class="team" ng-class="{ 'selected-team': team.key == currentHostSelected }"
+            ng-click="selectThisHost(team.key)">
+                {$ team.name $}
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="grey-box flexcolumnright">
+        <div>
+            تیم مهمان
+        </div>
+        <div class="flexrow">
+            <div ng-repeat="team in guestTeams" class="team" ng-class="{ 'selected-team': team.key == currentGuestSelected }"
+                 ng-click="selectThisGuest(team.key)">
+                {$ team.name $}
+            </div>
+        </div>
+    </div>
+</div>

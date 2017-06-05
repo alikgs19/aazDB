@@ -1,0 +1,53 @@
+@font-face {
+    font-family: vazir;
+    src: url(fonts/vazir-font-v7.0.0/Vazir-Light.woff);
+}
+
+@font-face {
+    font-family: vazir-bold;
+    src: url(fonts/vazir-font-v7.0.0/Vazir-Bold.woff);
+    font-width: bold;
+}
+
+* {
+    font-family: vazir;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.container-center {
+    padding-top: 200px;
+    width: 700px;
+    margin:auto;
+}
+
+.grey-box {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.grey-box:hover {
+    background-color: #ebebeb;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+}
+
+.flexcolumnright {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+}

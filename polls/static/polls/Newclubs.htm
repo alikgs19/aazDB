@@ -1,0 +1,13 @@
+<div class="container-center">
+
+    <div class="button" ng-click="newMatch()">
+        انجام بازی
+    </div>
+    <div class="club"ng-click="goToClub(club.key) "ng-repeat="club in clubs">
+
+        <div class="club-content">
+            <h2> {$ club.name $} </h2> <h5> {$ club.stadium $} </h5> <h5> {$ club.budget $} </h5>
+            <br>
+        </div>
+    </div>
+</div>
